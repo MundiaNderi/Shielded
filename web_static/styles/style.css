@@ -110,6 +110,26 @@ h3{
 .facilities-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
+
+
+/*-------------About----------*/
+.About{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    padding-top: 50pxx;
+}
+h3{
+    text-align: left;
+    width: 80%;
+}
+p{
+    text-align: left;
+}
+About ul{
+    list-style: none;
+    list-style-position: outside;
+}
 /*------ about us 
 .about-row{
     position: absolute;
