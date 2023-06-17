@@ -1,1 +1,109 @@
+/*--------{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0.76%;
+    right: 83.63%;
+    top: 0.31%;
+    bottom: 97.83%;
+    backdrop-filter: blur(2px);
+}
+
+nav{
+    position: absolute;
+    left: 0.14%;
+    right: 0%;
+    top: 0%;
+    bottom: 97.64%;
+    background: #FFFFFF;    
+}
+
+
+/*--------facilities
+.facilities{
+    position: absolute;
+    width: 1439px;
+    height: 830px;
+    left: 2px;
+    top: 559px;
+    background: #DBF9D9;
+}
+
+/*------ about us 
+.about-row{
+    position: absolute;
+    left: 35.37%;
+    right: 54.02%;
+    top: 0.56%;
+    bottom: 98.46%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;   
+}
+
+/*---------- What we do -
+.what-we-do{
+    position: absolute;
+    left: 48.75%;
+    right: 34.54%;
+    top: 0.56%;
+    bottom: 98.46%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+/*---------Contact -
+.contact{
+    position: absolute;
+    left: 65.05%;
+    right: 25.52%;
+    top: 0.66%;
+    bottom: 98.35%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+/*----------Blog----
+.blog{
+    position: absolute;
+    width: 76px;
+    height: 44px;
+    left: 1114px;
+    top: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+/*----------Donate ----
+.donate{
+    position: absolute;
+    width: 151px;
+    left: calc(50% - 151px/2 + 609.5px);
+    top: 0.72%;
+    bottom: 98.3%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+-------------*/
