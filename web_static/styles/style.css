@@ -117,7 +117,7 @@ h3{
     width: 80%;
     margin: auto;
     text-align: right;
-    padding-top: 50pxx;
+    padding-top: 50px;
 }
 h3{
     text-align: left;
@@ -126,7 +126,26 @@ h3{
 p{
     text-align: left;
 }
-About ul{
+.About ul{
+    list-style: none;
+    list-style-position: outside;
+}
+
+/*----- What We do----*/
+.what-we-do{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    padding-top: 50px;
+}
+h3{
+    text-align: left;
+    width: 80%;
+}
+p{
+    text-align: left;
+}
+.what-we-do ul{
     list-style: none;
     list-style-position: outside;
 }
