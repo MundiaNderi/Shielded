@@ -126,6 +126,12 @@ h3{
 p{
     text-align: left;
 }
+.statement{
+    text-align: left;
+}
+ul{
+    padding-left: 20px;
+}
 .About ul{
     list-style: none;
     list-style-position: outside;
