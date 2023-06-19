@@ -27,12 +27,3 @@ try:
 except Exception as e:
     print(
         f"Encountered an error while sending airtime. More error details below\n {e}")
-
-"""This data parameter contains the form data as a dictionary"""
-"""data = {
-    "username": "sandbox",
-    "recipients": [{"phoneNumber": phone_number, "currencyCode": currency_code}]
-}
-
-# response = requests.post(url, headers=headers, data=data)
-response_json = response.json()"""
