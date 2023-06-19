@@ -77,10 +77,19 @@ img{
     text-align: center;
     padding-top: 100px;
 }
-h1{
+
+.facilities-color{
+     background: #DBF9D9;
+     position: relative;
+     width: 100%;
+     background: #DBF9D9;
+}
+
+.facilities h1{
     font-size: 36px;
     font-weight: 600;
 }
+
 p{
     color: sea green;
     font-size: 14px;
@@ -126,12 +135,27 @@ h3{
 p{
     text-align: left;
 }
+
+.About-color{
+     background: #DBF9D9;
+     position: relative;
+     width: 100%;
+}
+
 .statement{
     text-align: left;
+    width: 65%;
 }
+
 ul{
     padding-left: 20px;
 }
+
+.statement-color{
+     background: #DBF9D9;
+     position: relative;
+}
+
 About ul{
     list-style: none;
     list-style-position: outside;
@@ -144,17 +168,146 @@ About ul{
     text-align: right;
     padding-top: 50px;
 }
+.What-we-do-color{
+     background: #DBF9D9;
+     position: relative;
+     width: 100%;
+}
+
 h3{
     text-align: left;
     width: 80%;
 }
+
 p{
     text-align: left;
 }
+
 .what-we-do ul{
     list-style: none;
     list-style-position: outside;
 }
+
+/*-------------Contact Us----------*/
+.Contact-form {
+     width: 80%;
+     margin: auto;
+     text-align: left;
+     padding-top: 50px;
+}
+
+.Contact-color {
+    background: #DBF9D9;
+     position: relative;
+     width: 100%;
+}
+
+.Contact-form h1 {
+    text-align: left;
+    width: 80%;
+}
+
+.form-group {
+      margin-bottom: 10px;
+}
+.form-group label {
+      display: block;
+      font-weight: bold;
+}
+
+.form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 50%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+}
+
+.form-group textarea {
+      height: 100px;
+}
+
+.form-group .submit-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+.form-group .submit-button:hover {
+      background-color: #45a049;
+}
+
+/*-------------footer----------*/
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-color{
+     background: #6BA967;
+     position: relative;
+     width: 100%;
+}
+
+.container h5{
+    text-align: left;
+    width: 80%;
+}
+
+.footer-image{
+position: auto;
+width: 304px;
+height: 256px;
+left: calc(50% - 304px/2 - 7px);
+}
+
+.fa fa-phone,
+ span{
+      display: inline-block;
+}
+
+.Moyale:hover{
+transform: scale(1.5);
+}
+
+.Narok:hover{
+transform: scale(1.5);
+}
+
+.fa fa-home,
+ span{
+      display: inline-block:
+}
+
+.footer p{
+text-align: center;
+}
+
+.icons{
+text-align: right;
+display: block;
+}
+
+.fb:hover{
+transform: scale(1.5);
+}
+
+.tw:hover{
+transform: scale(1.5);
+}
+
+.in:hover{
+transform: scale(1.5);
+}
+
 /*------ about us 
 .about-row{
     position: absolute;
