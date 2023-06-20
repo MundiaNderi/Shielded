@@ -1,1 +1,2 @@
 .env
+app/__pycache__/send_sms.cpython-311.pyc
