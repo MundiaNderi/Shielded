@@ -1,6 +1,7 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, Response
 from send_sms import send_sms
+import africastalking
 
 app = Flask(__name__)
 
