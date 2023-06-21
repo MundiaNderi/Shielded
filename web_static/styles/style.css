@@ -162,6 +162,36 @@ About ul{
     list-style-position: outside;
 }
 
+.red-text{
+    text-align: right;
+    font-style: italic;
+    position: absolute;
+    right: 220px;
+    top: 360px;
+    color:#F00E0E;
+    font-size: 80px;
+}
+
+.women{
+    text-align: right;
+    font-style: italic;
+    position: absolute;
+    right: 150px;
+    top: 360px;
+}
+
+.side{
+    font-style: italic;
+    position: absolute;
+    right: 120px;
+    top: 420px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    text-align: center;
+}
+
 /*----- What We do----*/
 .what-we-do{
     width: 80%;
