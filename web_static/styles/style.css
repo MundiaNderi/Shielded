@@ -360,6 +360,68 @@ body {
     color: #666;
   }
 
+/*-------------Donate page----------*/
+  .back-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  .transform-color{
+    background: #DBF9D9;
+    width: 100%;
+  }
+  
+  .donate-color{
+    background: #DBF9D9;
+    width: 100%;
+  }
+
+  .transform{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .transform h3{
+    text-align: center;
+  }
+
+
+  .donate-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .donate-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, .send-button {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .send-button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #CC0000;
+  }
+  
 /*------ about us 
 .about-row{
     position: absolute;
