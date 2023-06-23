@@ -1,8 +1,9 @@
 import os
-from flask import Flask, request, Response
+from flask import Flask, request, Response,render_template, url_for, redirect
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
 import africastalking
 from ussd import handle_ussd_callback
-from models import Donation
 
 # Initialize Africa's Talking API
 username = os.environ['USERNAME']
@@ -13,7 +14,65 @@ airtime = africastalking.Airtime
 
 app = Flask(__name__)
 
+basedir = os.path.abspath(os.path.dirname(__file__))
 
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] =\
+        'sqlite:///' + os.path.join(basedir, 'database.db')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+# database tables
+class FormSubmission(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
+    subject = db.Column(db.String(100))
+    message = db.Column(db.Text)
+
+    def __repr__(self):
+        return f'<FormSubnission {self.name}>'
+
+class CaseOfficer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    firstname = db.Column(db.String(100), nullable=False)
+    lastname = db.Column(db.String(80), nullable=False)
+    phone = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f'<CaseOfficer {self.firstnamename}>'
+
+class SafeHouse(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    housename = db.Column(db.String(100), nullable=False)
+    location = db.Column(db.String(100), nullable=False)
+    managerfirstname = db.Column(db.String(80), nullable=False)
+    managerlastname = db.Column(db.String(80), nullable=False)
+    phone = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f'<SafeHouse {self.housename}>'    
+
+class StaffDetails(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    firstname = db.Column(db.String(100), nullable=False)
+    lastname = db.Column(db.String(100), nullable=False)
+    phone = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f'<StaffDetails {self.firstname}>'
+    
+class Donation(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    amount = db.Column(db.Float, nullable=False)
+    mpesa = db.Column(db.String(20), nullable=False)
+
+    def __repr__(self):
+        return f'<Donation {self.name}>'
+
+# Create Routes
 @app.route('/', methods=['POST', 'GET'])
 def ussd_callback():
     session_id = request.values.get("sessionId", None)
@@ -46,14 +105,6 @@ def donate():
         return "Thank you for your donation, {}! We received {} KES.".format(name, amount)
 
     return render_template('donate.html')
-
-# Create a form class
-class FormSubmission(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100))
-    email = db.Column(db.String(100))
-    subject = db.Column(db.String(100))
-    message = db.Column(db.Text)
 
 @app.route('/php-form-handler', methods=['POST'])
 def php_form_handler():
