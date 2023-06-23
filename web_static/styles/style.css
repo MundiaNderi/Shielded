@@ -310,6 +310,35 @@ transform: scale(1.5);
 transform: scale(1.5);
 }
 
+/*-------------Blog----------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .article-color {
+     background: #DBF9D9;
+     width: 100%;
+  }
+  
+  main {
+    margin-left: 80px;
+  }
+  
+  article {
+    margin-bottom: 0px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+
 /*------ about us 
 .about-row{
     position: absolute;

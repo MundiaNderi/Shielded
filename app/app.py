@@ -1,15 +1,18 @@
-from flask import Flask, request
+import os
+from flask import Flask, request, Response
 import africastalking
 from ussd import handle_ussd_callback
+from models import Donation
 
 # Initialize Africa's Talking API
-username = "<shieldedApp>"
-api_key = "<84b3ed23535f2352fa0a5d022da04f27c319f59d62d93f60c8927d89d933cc2c>"
+username = os.environ['USERNAME']
+api_key = os.environ['API_KEY']
 africastalking.initialize(username, api_key)
 sms = africastalking.SMS
 airtime = africastalking.Airtime
 
 app = Flask(__name__)
+
 
 @app.route('/', methods=['POST', 'GET'])
 def ussd_callback():
@@ -27,6 +30,7 @@ def index():
 def blog():
     return render_template('blog.html')
 
+# Create route for the donate page
 @app.route('/donate', methods=['GET', 'POST'])
 def donate():
     if request.method == 'POST':
@@ -34,11 +38,55 @@ def donate():
         amount = request.form.get('amount')
         mpesa = request.form.get('mpesa')
 
-        # Process the donation data (e.g., save to a database, initiate payment, etc.)
+        # Save the donation to the database
+        donation = Donation(name=name, amount=amount, mpesa=mpesa)
+        db.session.add(donation)
+        db.session.commit()
 
         return "Thank you for your donation, {}! We received {} KES.".format(name, amount)
 
     return render_template('donate.html')
 
-if __name__ == '__main__':
-    app.run()
+# Create a form class
+class FormSubmission(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    email = db.Column(db.String(100))
+    subject = db.Column(db.String(100))
+    message = db.Column(db.Text)
+
+@app.route('/php-form-handler', methods=['POST'])
+def php_form_handler():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    subject = request.form.get('subject')
+    message = request.form.get('message')
+
+    #save form to the database
+    form_submission = FormSubmission(name=name, email=email, subject=subject, message=message)
+    db.session.add(form_submission)
+    db.session.commit()
+
+    return 'Form submitted successfully'
+
+
+@app.route('/incoming-messages', methods=['POST'])
+def incoming_messages():
+    data = request.get_json(force=True)
+    print(f'Incoming message...\n {data}')
+    return Response(status=200)
+
+
+@app.route('/delivery-reports', methods=['POST'])
+def delivery_reports():
+    data = request.get_json(force=True)
+    print(f'Delivery report response....\n {data}')
+    return Response(status=200)
+
+# Invalid URL
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+
+if __name__ == "__main__":
+    app.run(debug=True, port=os.environ.get("PORT"))
