@@ -1,3 +1,4 @@
+import africastalking
 from sms import send_sms
 from airtime import top_up_airtime
 from database import get_case_officer_details, get_safe_house_location, get_staff_details

@@ -17,7 +17,7 @@ africastalking.initialize(username, api_key)
 """Create an instance of the Airtime class"""
 airtime = africastalking.Airtime
 
-phone_number = "+254717209081"  # In international format
+phone_number = "+254710209081"  # In international format
 currency_code = "KES"  # Change this to your country's code
 amount = 270
 
