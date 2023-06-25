@@ -8,6 +8,8 @@ username = os.environ['USERNAME']
 api_key = os.environ['API_KEY']
 africastalking.initialize(username, api_key)
 
+
+# Create an instance of the sms class
 sms = africastalking.SMS
 
 
@@ -15,7 +17,7 @@ class send_sms():
     def send(self):
         recipients = ["+254716299581"]
         message = "Hey Shielded Ninja!"
-        sender = "+254700000000"
+        sender = "sandbox"
         try:
             response = sms.send(message, recipients, sender)
             print(response)

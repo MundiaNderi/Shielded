@@ -5,12 +5,12 @@ from database import get_case_officer_details, get_safe_house_location, get_staf
 import sys
 
 
-def send_sms():
+"""def send_sms():
     pass
 
 
 def top_up_airtime():
-    pass
+    pass"""
 
 
 def handle_ussd_callback(session_id, service_code, phone_number, text, sms, airtime):
