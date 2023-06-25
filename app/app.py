@@ -3,7 +3,7 @@ from flask import Flask, request, Response,render_template, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 import africastalking
-from ussd import handle_ussd_callback
+# from ussd import handle_ussd_callback
 
 # Initialize Africa's Talking API
 username = os.environ['USERNAME']
@@ -12,11 +12,11 @@ africastalking.initialize(username, api_key)
 sms = africastalking.SMS
 airtime = africastalking.Airtime
 
-app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "key"
 app.config['SQLALCHEMY_DATABASE_URI'] =\
         'sqlite:///' + os.path.join(basedir, 'database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
