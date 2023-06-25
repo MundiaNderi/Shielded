@@ -1,16 +1,14 @@
 <?php
 $name = $_POST['name'];
 $visitor_email = $_POST['email']
-$subject = $_POST['subject']
 $message = $_POST['message']
 
-$email_from = 'info@shielded.com';
+$email_from = '$visitor_email.\n';
 
-$email_subject = 'New Form Submission';
+$email_message = 'New message';
 
 $email_body = "User Name: $name.\n".
               "User Email: $visitor_email.\n".
-              "Subject: $subject.\n".
               "User message: $message.\n";
 
 

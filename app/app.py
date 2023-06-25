@@ -2,13 +2,18 @@ import os
 from flask import Flask, request, Response,render_template, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
+from dotenv.main import load_dotenv
+from ussd import handle_ussd_callback
 import africastalking
-# from ussd import handle_ussd_callback
+
 
 # Initialize Africa's Talking API
+load_dotenv()
 username = os.environ['USERNAME']
 api_key = os.environ['API_KEY']
 africastalking.initialize(username, api_key)
+
+
 sms = africastalking.SMS
 airtime = africastalking.Airtime
 
@@ -121,11 +126,17 @@ def php_form_handler():
     return 'Form submitted successfully'
 
 
+"""Create incoming messages route"""
+
+
 @app.route('/incoming-messages', methods=['POST'])
 def incoming_messages():
     data = request.get_json(force=True)
     print(f'Incoming message...\n {data}')
     return Response(status=200)
+
+
+"""create delivery reports route"""
 
 
 @app.route('/delivery-reports', methods=['POST'])
@@ -139,5 +150,11 @@ def delivery_reports():
 def page_not_found(e):
     return render_template("404.html"), 404
 
-if __name__ == "__main__":
-    app.run(debug=True, port=os.environ.get("PORT"))
+
+def main():
+    if __name__ == "__main__":
+        app.run(debug=True, port=os.environ.get("PORT"))
+
+
+main()
+
