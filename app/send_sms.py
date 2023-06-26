@@ -17,7 +17,7 @@ class send_sms():
     def send(self):
         recipients = ["+254716299581"]
         message = "Hey Shielded Ninja!"
-        sender = "sandbox"
+        sender = "88587"
         try:
             response = sms.send(message, recipients, sender)
             print(response)
