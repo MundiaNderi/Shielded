@@ -80,7 +80,7 @@ nav .fa{
 }
 
 @media(max-width: 700px) {
-   .what-we-do{
+   .what-we-do p{
         width: 100%;
         text-align: 100%;
     }
