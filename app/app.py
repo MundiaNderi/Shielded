@@ -18,12 +18,11 @@ sms = africastalking.SMS
 airtime = africastalking.Airtime
 
 
-basedir = os.path.abspath(os.path.dirname(__file__))
+# basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "key"
-app.config['SQLALCHEMY_DATABASE_URI'] =\
-    'sqlite:///' + os.path.join(basedir, 'database.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mvrqdpje:U4fsMj4doJ3COF-BEFAU9FG9VpCEKdvd@tyke.db.elephantsql.com/mvrqdpje'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -48,7 +47,7 @@ class CaseOfficer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     firstname = db.Column(db.String(100), nullable=False)
     lastname = db.Column(db.String(80), nullable=False)
-    phone = db.Column(db.Integer)
+    phone = db.Column(db.String(20))
 
     def __repr__(self):
         return f'<CaseOfficer {self.firstname}>'
@@ -60,7 +59,7 @@ class SafeHouse(db.Model):
     location = db.Column(db.String(100), nullable=False)
     managerfirstname = db.Column(db.String(80), nullable=False)
     managerlastname = db.Column(db.String(80), nullable=False)
-    phone = db.Column(db.Integer)
+    phone = db.Column(db.String(20))
 
     def __repr__(self):
         return f'<SafeHouse {self.housename}>'
@@ -80,7 +79,7 @@ class Donation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     amount = db.Column(db.Float, nullable=False)
-    mpesa = db.Column(db.String(20), nullable=False)
+    mpesanumber = db.Column(db.String(20), nullable=False)
 
     def __repr__(self):
         return f'<Donation {self.name}>'

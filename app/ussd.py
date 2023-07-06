@@ -43,6 +43,7 @@ def handle_ussd_callback(phone_number, text):
 
         """safe_house_location.name, safe_house_location.location"""
         response = "END Details of the Safe house location nearest to you has been sent to your phone."
+        print("yesss")
         save_ussd(phone_number)
 
     elif text == "3":
