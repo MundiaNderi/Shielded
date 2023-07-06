@@ -2,31 +2,32 @@ import africastalking
 from dotenv import load_dotenv
 import os
 
-"""Initialize Africa's Talking"""
+# Load environment variables from .env file
 load_dotenv()
-username = os.environ['USERNAME']
-api_key = os.environ['API_KEY']
-africastalking.initialize(username, api_key)
+
+# Initialize Africa's Talking
 
 
-# Create an instance of the sms class
-sms = africastalking.SMS
+class sms:
+    def __init__(self):
+        self.username = os.environ['USERNAME']
+        self.api_key = os.environ['API_KEY']
 
-
-class send_sms():
     def send(self):
+        # Send message
         recipients = ["+254716299581"]
-        message = "Hey Shielded Ninja!"
-        sender = "88587"
+        message = "Hello from Africa's Talking!"
+        africastalking.initialize(self.username, self.api_key)
+
+        # Create an instance of the SMS class
+        sms = africastalking.SMS
+
         try:
-            response = sms.send(message, recipients, sender)
+            response = sms.send(message, recipients)
             print(response)
         except Exception as e:
-            print(f'Nairobi, we have a problem: {e}')
+            print(f'Houston, we have a problem: {e}')
+            print(e)
 
 
-# Create an instance of the send_sms class
-sms_instance = send_sms()
-
-# Call the send method
-sms_instance.send()
+sms().send()

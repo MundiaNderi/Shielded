@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, Response, render_template, url_for, redirect
+from flask import Flask, request, Response, render_template, url_for, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from dotenv.main import load_dotenv
@@ -28,15 +28,17 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+
 # database tables
 
 
 class FormSubmission(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), nullable=False)
+    name = db.Column(db.String(100), nullable=True)
+    email = db.Column(db.String(100), nullable=True)
     subject = db.Column(db.String(100))
     message = db.Column(db.Text)
+    phone = db.Column(db.String(20), nullable=True)
 
     def __repr__(self):
         return f'<FormSubnission {self.name}>'
@@ -49,7 +51,7 @@ class CaseOfficer(db.Model):
     phone = db.Column(db.Integer)
 
     def __repr__(self):
-        return f'<CaseOfficer {self.firstnamename}>'
+        return f'<CaseOfficer {self.firstname}>'
 
 
 class SafeHouse(db.Model):
@@ -86,13 +88,13 @@ class Donation(db.Model):
 # Create Routes
 
 
-@app.route('/', methods=['POST', 'GET'])
+"""@app.route('/', methods=['POST', 'GET'])
 def ussd_callback():
     session_id = request.values.get("sessionId", None)
     service_code = request.values.get("serviceCode", None)
     phone_number = request.values.get("phoneNumber", None)
     text = request.values.get("text", "")
-    return handle_ussd_callback(session_id, service_code, phone_number, text, sms, airtime)
+    return handle_ussd_callback(session_id, service_code, phone_number, text, sms, airtime)"""
 
 
 @app.route('/')
@@ -137,7 +139,7 @@ def php_form_handler():
     db.session.add(form_submission)
     db.session.commit()
 
-    return 'Form submitted successfully'
+    return render_template('index.html')
 
 
 """Create incoming messages route"""

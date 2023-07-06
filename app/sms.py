@@ -4,4 +4,4 @@ import requests
 import pprint
 import os
 from flask import Flask, request
-from send_sms import send_sms
+from send_sms import sms

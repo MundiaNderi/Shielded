@@ -29,5 +29,9 @@ def top_up_airtime(phone_number, amount, currency_code):
         print(f"the results is {response}")
 
     except Exception as e:
+        print(e)
         print(
             f"Encountered an error while sending airtime. More error details below\n {e}")
+
+
+top_up_airtime(phone_number, amount, currency_code)

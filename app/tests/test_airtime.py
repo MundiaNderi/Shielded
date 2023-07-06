@@ -1,7 +1,7 @@
 import unittest
 import africastalking
 from unittest.mock import patch
-from app.airtime import top_up_airtime
+from airtime import top_up_airtime
 
 
 class TestAirtime(unittest.TestCase):
