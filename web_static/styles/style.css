@@ -81,7 +81,7 @@ nav .fa{
 
 @media(max-width: 700px) {
    .what-we-do{
-       width: 80%;
+       tex-align: 80%;
 
    }
     .contact-col {
