@@ -218,24 +218,6 @@ p{
      width: 100%;
 }
 
-.what-we-do{
-    text-align: left;
-    width: 50%;
-    margin-left: 10%;
-}
-
-
-.What-we-do-color{
-     background: #DBF9D9;
-     position: relative;
-    padding-top: 40px;
-}
-
-.what-we-do ul{
-    list-style: none;
-    list-style-position: outside;
-}
-
   
 .red-text{
     text-align: right;
@@ -270,16 +252,15 @@ p{
 }
 
 /*----- What We do----*/
-what-we-do{
-    width: 80%;
-    margin: auto;
-    text-align: right;
+.what-we-do{
+    width: 50%;
+    margin-left:10%;
+    text-align: left;
     padding-top: 70px;
 }
-What-we-do-color{
+.What-we-do-color{
      background: #DBF9D9;
      position: relative;
-     width: 100%;
 }
 
 h3{
@@ -291,10 +272,6 @@ p{
     text-align: left;
 }
 
-.what-we-do ul{
-    list-style: none;
-    list-style-position: outside;
-}
 
 /*-------------Contact Us----------*/
 .Contact-form {
@@ -306,8 +283,8 @@ p{
 
 .Contact-color {
     background: #DBF9D9;
-     position: relative;
-     width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .Contact-form h1 {
