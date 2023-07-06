@@ -81,9 +81,12 @@ nav .fa{
 
 @media(max-width: 700px) {
    .what-we-do{
-       tex-align: 80%;
-
-   }
+        width: 80%;
+        text-align: center;
+        padding-top: 70px;
+        margin-left: 10%;
+        position: absolute;
+    }
     .contact-col {
          text-align: center;
     }
