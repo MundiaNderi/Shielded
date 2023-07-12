@@ -36,9 +36,14 @@ if Other:
 - Open dialogue.
 - Forward message to a case officer.
 
+### BLOGS
+Serah Nderi - https://dev.to/mundianderi/behind-the-scenes-exploring-the-technical-challenges-and-solutions-in-building-shielded-edd
+Hasina Said - https://medium.com/@hessy683/shielded-my-first-ever-project-to-code-to-completion-e3726f779e78
 
 ### AUTHORS
 Hasina Said - www.linkedin.com/in/hasina-abdulhalim/
+Serah Nderi - www.linkedin.com/in/serah-nderi/
+
 
 
 
