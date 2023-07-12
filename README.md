@@ -56,8 +56,12 @@ To fix any or enhance anything,follow these steps:
 - For the frontend we decided to use Html5,CSS3 and a little of Javascript and react
 - Safaricom daraja API for our donate button
 - We took the help help of formspree to make our Contact Us feature work and it was successful.
-- For the backend we used Python,Flask web application and SQL database.  
+- For the backend we used Python,Flask web application and SQL database.
 
+
+![Uploading 0_KNixT8bQ0HxVeeJ7.png…]()
+
+  
 ### WHY SHIELDED
 SGBV and FGM is something that is affecting our countries till today. Hearing multiple stories on News channel of girls forced to undergo such vile acts under the excuse of tradition was one of the reasons for picking this project.
 We also believe that educated girls play a vital role in driving social and econmic development. When girls recieve an eduction,they contribute to the workforce,drive innovation and foster economic growth.
