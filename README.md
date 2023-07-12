@@ -49,7 +49,7 @@ To fix any or enhance anything,follow these steps:
 - push to the branch
 - Create a pull request.
 
-### LICENSE [contributiong guidlines for this project] (shielded/LICENSE)
+### LICENSE
 MIT  © Serah Nderi
 
 ### BLOGS
