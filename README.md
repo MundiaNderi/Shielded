@@ -49,6 +49,21 @@ To fix any or enhance anything,follow these steps:
 - push to the branch
 - Create a pull request.
 
+![images](https://github.com/MundiaNderi/Shielded/assets/113606328/8b20cfa3-8a29-4559-8315-453984f8f8f7)
+
+
+### BUILT WITH
+- For the frontend we decided to use Html5,CSS3 and a little of Javascript and react
+- Safaricom daraja API for our donate button
+- We took the help help of formspree to make our Contact Us feature work and it was successful.
+- For the backend we used Python,Flask web application and SQL database.  
+
+### WHY SHIELDED
+SGBV and FGM is something that is affecting our countries till today. Hearing multiple stories on News channel of girls forced to undergo such vile acts under the excuse of tradition was one of the reasons for picking this project.
+We also believe that educated girls play a vital role in driving social and econmic development. When girls recieve an eduction,they contribute to the workforce,drive innovation and foster economic growth.
+
+![download](https://github.com/MundiaNderi/Shielded/assets/113606328/4d22ab85-c13c-42b0-95f8-dc2f18de9c45)
+
 ### LICENSE
 MIT  © Serah Nderi
 
@@ -58,14 +73,12 @@ Serah Nderi - https://dev.to/mundianderi/behind-the-scenes-exploring-the-technic
 Hasina Said - https://medium.com/@hessy683/shielded-my-first-ever-project-to-code-to-completion-e3726f779e78
 
 ### AUTHORS
-Hasina Said -<Hess-y> - www.linkedin.com/in/hasina-abdulhalim/
+Hasina Said - www.linkedin.com/in/hasina-abdulhalim/
 
 Serah Nderi - www.linkedin.com/in/serah-nderi/
 
 
-
-
-
+![images](https://github.com/MundiaNderi/Shielded/assets/113606328/37af9cac-8e8b-42f5-afd4-7761f2f13fc7)
 
 
 
