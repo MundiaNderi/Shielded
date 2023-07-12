@@ -20,15 +20,18 @@ How can we be of assistance? Present them with these 3 options:
 1.Emergency 
 2.info
 3.Other
+
 If Emergency: You are provided with below 
 - 1.Ambulance 2. Police 3. Case Officer as options.
 - Make call, plus follow up number + credit
 - Give police contacts + credit
 - Number + credit, send sms to case officer
+
 If Info:
 - Give them link + data
 - Links to join a WhatsAPP community of women healing from abuse.
 - GBV violence free hotline - 1195
+
 if Other:
 - Open dialogue.
 - Forward message to a case officer.
