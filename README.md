@@ -1,6 +1,7 @@
 
 # SHIELDED
 Our project shielded is all about redefining what innocence and dignity means to girls. Our project’s main intention is to create awareness against SGBV and FGM and provide help to those affected by them. This project will not solve and and doesn’t seek to solve the poverty that these girls live in.
+This is the link to our deployed site: https://lucent-monstera-799cff.netlify.app
 
  ![image](https://github.com/MundiaNderi/Shielded/assets/113606328/7ed60220-39a0-4fdd-bf13-f0d4b6485e86)
 
