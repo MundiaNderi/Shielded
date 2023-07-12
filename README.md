@@ -37,6 +37,21 @@ if Other:
 - Open dialogue.
 - Forward message to a case officer.
 
+
+###DEVELOPMENT
+Want to contribute? You are welcome.
+To fix any or enhance anything,follow these steps:
+
+- For the repo
+- Create  new branch
+- Make the changes
+- Commit your changes
+- push to the branch
+- Create a pull request.
+
+### LICENSE 
+
+
 ### BLOGS
 Serah Nderi - https://dev.to/mundianderi/behind-the-scenes-exploring-the-technical-challenges-and-solutions-in-building-shielded-edd
 Hasina Said - https://medium.com/@hessy683/shielded-my-first-ever-project-to-code-to-completion-e3726f779e78
