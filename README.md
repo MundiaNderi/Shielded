@@ -58,6 +58,8 @@ To fix any or enhance anything,follow these steps:
 - We took the help help of formspree to make our Contact Us feature work and it was successful.
 - For the backend we used Python,Flask web application and SQL database.
 
+  #### Architecture
+
 ![0_KNixT8bQ0HxVeeJ7](https://github.com/MundiaNderi/Shielded/assets/113606328/eaf676b0-c2e2-456c-a510-b2dd4a4e2143)
 
  
