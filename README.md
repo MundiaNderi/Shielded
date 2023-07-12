@@ -1,4 +1,4 @@
-                          ![image](https://github.com/MundiaNderi/Shielded/assets/113606328/7ed60220-39a0-4fdd-bf13-f0d4b6485e86)
+  ![image](https://github.com/MundiaNderi/Shielded/assets/113606328/7ed60220-39a0-4fdd-bf13-f0d4b6485e86)
 
                                                                   
                                                                   SHIELDED
