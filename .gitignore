@@ -4,3 +4,12 @@ tempCodeRunnerFile.py
 app/__pycache__/airtime.cpython-311.pyc
 app/__pycache__/sms.cpython-311.pyc
 app/__pycache__/ussd.cpython-311.pyc
+node_modules
+HikVision.js
+package-lock.json
+package.json
+crypto-js
+.vscode
+settings.json
+.idea
+workspace.xml
