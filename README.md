@@ -49,7 +49,8 @@ To fix any or enhance anything,follow these steps:
 - push to the branch
 - Create a pull request.
 
-### LICENSE (shielded/LICENSE)
+### LICENSE 
+[contributiong guidlines for this project] (shielded/LICENSE)
 MIT  © Serah Nderi
 
 ### BLOGS
