@@ -50,7 +50,7 @@ To fix any or enhance anything,follow these steps:
 - Create a pull request.
 
 ### LICENSE 
-
+MIT  © Serah Nderi
 
 ### BLOGS
 Serah Nderi - https://dev.to/mundianderi/behind-the-scenes-exploring-the-technical-challenges-and-solutions-in-building-shielded-edd
