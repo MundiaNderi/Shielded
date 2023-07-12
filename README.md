@@ -22,7 +22,7 @@ How can we be of assistance? Present them with these 3 options:
 3.Other
 
 If Emergency: You are provided with below 
-- 1.Ambulance 2. Police 3. Case Officer as options.
+- Ambulance , Police and Case Officer as options.
 - Make call, plus follow up number + credit
 - Give police contacts + credit
 - Number + credit, send sms to case officer
@@ -37,7 +37,8 @@ if Other:
 - Forward message to a case officer.
 
 
-
+### AUTHORS
+Hasina Said - www.linkedin.com/in/hasina-abdulhalim/
 
 
 
