@@ -15,7 +15,7 @@ Our API-shielded seeks to provide information,access to safe houses,airtime,emer
 We provide to ways solution. Website and USSD. Those who find us via our websit will still have access to our USSD that is included on our website too.
 
 #### How the USSD works
-Users Dial  *384*656789# -  What's your name?
+Users Dial  \*384*656789# -  What's your name?
 After they input the name -
 How can we be of assistance? Present them with these 3 options:
 1.Emergency 
