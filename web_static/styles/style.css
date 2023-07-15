@@ -130,7 +130,7 @@ nav .fa{
       }
   .nav-links{
           position: fixed ;
-          background: #f74033;
+          background: #DBF9D9;
           height: 715vh;
           width: 200px;
           top: 0;
@@ -141,7 +141,7 @@ nav .fa{
       }
   nav .fa{
           display: block;
-          color: #080808;
+          color: #000000;
           margin: 10px;
           font-size: 22px;
           cursor: pointer;
