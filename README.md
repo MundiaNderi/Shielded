@@ -12,7 +12,7 @@ Girls in FGM-prone societies have their innocence taken away from them from the 
 This project will not solve and doesn’t seek to solve the poverty that these girls live in. Nonetheless by rescuing these girls and setting them up in places where they can achieve education as opposed to early marriage and FGM, that outcome is achieved in the longrun.
 
 ### THE SOLUTION
-Our API-shielded seeks to provide information,access to safe houses,airtime,emergency services,etc to women in need of help.
+Shielded seeks to provide information,access to safe houses,airtime,emergency services,etc to women in need of help.
 We provide to ways solution. Website and USSD. Those who find us via our websit will still have access to our USSD that is included on our website too.
 
 #### How the USSD works
